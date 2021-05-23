@@ -1,0 +1,146 @@
+body{
+  background-color: #e4efe7;
+}
+.navbar{
+  padding: 50px;
+  background-color: #a7d7c5;
+}
+
+.dropdown-item{
+    padding:  10px 15px;
+    margin: 0 10px;
+  }
+  
+  .dropdown_heading{
+    padding: 40px 0 20px 0;
+    margin: 0 0 20px 90px;
+  }
+  
+  .navbar-brand{
+    font-size: 40px;
+  }
+  
+  .nav-item{
+    padding: 0 10px;
+    font-size: 20px;
+  }
+
+.dropdownbutton:hover .dropdown-menu{
+  display: block;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: fit-content;
+  height: fit-content;
+  animation: scaleDown 500ms ease-in-out forwards;
+  transform-origin: top center;
+  background-color: #74b49b;
+  color: #121212;
+}
+
+.dropdownbutton:hover .dropdown-item{
+  width: fit-content;
+  height: fit-content;
+  animation: translatex 2s ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes scaleDown{
+  0%{
+    transform: scaleY(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+@keyframes translatex{
+  0%{
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.row{
+    width: max-content;
+}
+
+.col{
+    width: max-content;
+    margin: 0 100px 20px 100px;
+    padding: 20px 10px;
+}
+
+#second_col, #first_col{
+    margin-left: 20px;
+    border-style: none none none solid;
+    border-color: rgb(70, 70, 70);
+    border-width: 0.1em;
+}
+
+#first_col{
+    margin-left: 90px;
+}
+
+
+.slidingOuterCon{
+  overflow: hidden;
+  margin: 100px auto;
+  display: flex;
+  background-color: #74b49b;
+}
+.slidingBackground{
+  display: flex;
+  position: relative;
+  width: 5000px;
+  height: 400px;
+  animation: slide 90s linear infinite;
+  justify-content: space-around;
+}
+
+.slidingBackground:hover{
+  animation-play-state: paused ;
+}
+
+.topsells{
+  position: relative;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+} 
+
+img{
+  margin: 30px 0;
+  padding: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+h3{
+  margin: 0;
+  padding: 0;
+  margin-top: 300px;
+  position: relative;
+  right: 400px;
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+
+.about_li, .support_li{
+  position: absolute;
+  right: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
