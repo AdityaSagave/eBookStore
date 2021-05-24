@@ -27,8 +27,8 @@
 							<ul class="dropdown-menu" aria-labelledby="dropdownmenu">
 								<div class="container">
 									<h1 class="dropdown_heading dropdown-item subhead">BOOKS</h1>
-									<div class="row row-cols-lg-2 row-cols-md-auto row-cols-sm-auto">
-										<div class="col " id="first_col">
+									<div class="row booksdropdown row-cols-md-auto row-cols-sm-auto">
+										<div class="col" id="first_col">
 											<li class="dropdown-item">New books</li>
 											<li class="dropdown-item">Bestsellers</li>
 											<li class="dropdown-item">Coming soon</li>
@@ -57,7 +57,7 @@
 							<ul class="dropdown-menu" aria-labelledby="dropdownmenu">
 								<div class="container">
 									<h1 class="dropdown_heading dropdown-item subhead">Best Sellers</h1>
-									<div class="row row-cols-lg-1 row-cols-md-auto row-cols-sm-auto">
+									<div class="row row-cols-md-auto row-cols-sm-auto">
 										<div class="col " id="first_col">
 											<li class="dropdown-item">New books</li>
 											<li class="dropdown-item">Bestsellers</li>
@@ -79,7 +79,7 @@
 							<ul class="dropdown-menu" aria-labelledby="dropdownmenu">
 								<div class="container">
 									<h1 class="dropdown_heading dropdown-item subhead">Journals</h1>
-									<div class="row row-cols-lg-1 row-cols-md-auto row-cols-sm-auto">
+									<div class="row row-cols-md-auto row-cols-sm-auto">
 										<div class="col " id="first_col">
 											<li class="dropdown-item">New books</li>
 											<li class="dropdown-item">Bestsellers</li>
@@ -113,8 +113,8 @@
 							<a href="#" class="nav-link">About</a>
 							<ul class="dropdown-menu about_li">
 								<div class="container">
-									<div class="row">
-										<div class="col">
+									<div class="row row-cols-md-auto row-cols-sm-auto">
+										<div class="col" id="about_items">
 											<li class="dropdown-item subhead"><strong>ABOUT</strong></li>
 											<li class="dropdown-item">BooksCorner Flagship Store</li>
 											<li class="dropdown-item">Our Philosophy</li>
@@ -124,8 +124,8 @@
 											<li class="dropdown-item">Our Staff</li>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col-6">
+									<div class="row row-cols-md-auto row-cols-sm-auto">
+										<div class="col-6 addr">
 											<li class="dropdown-item subhead"><strong>Contact</strong></li>
 											<li class="dropdown-item subhead">+31 (020) 612 1216</li>
 											<li class="dropdown-item subhead">service@mendo.nl</li>
@@ -145,7 +145,7 @@
 							<a href="#" class="nav-link">Support</a>
 							<ul class="dropdown-menu support_li">
 								<div class="container">
-									<div class="row">
+									<div class="row row-cols-md-auto row-cols-sm-auto">
 										<div class="col support_items" id="support_items">
 											<li class="dropdown-item subhead"><strong>SUPPORT</strong></li>
 											<li class="dropdown-item">Account</li>
@@ -156,7 +156,7 @@
 											<li class="dropdown-item">The Team</li>
 										</div>
 									</div>
-									<div class="row">
+									<div class="row row-cols-md-auto row-cols-sm-auto">
 										<div class="col-6 addr">
 											<li class="dropdown-item subhead"><strong>Contact</strong></li>
 											<li class="dropdown-item subhead">+31 (020) 612 1216</li>
@@ -177,22 +177,25 @@
 							<a href="#" class="nav-link">Account</a>
 							<ul class="dropdown-menu support_li">
 								<div class="container">
-									<div class="row">
+									<div class="row row-cols-md-auto row-cols-sm-auto">
 										<div class="col">
 											<li class="dropdown-item subhead"><strong>Account</strong></li>
 											<li class="dropdown-item subhead">
 												<label for="exampleInputPassword1 subhead">Username</label>
 												<div class="input-group subhead">
 													<div class="input-group-prepend subhead">
-														<span class="input-group-text subhead" id="basic-addon1">@</span>
+														<span class="input-group-text subhead"
+															id="basic-addon1">@</span>
 													</div>
-													<input type="text" class="form-control subhead" placeholder="Username">
+													<input type="text" class="form-control subhead"
+														placeholder="Username">
 												</div>
 											</li>
 											<li class="dropdown-item subhead">
 												<label for="exampleInputPassword1 subhead">Password</label>
 												<div class="input-group">
-													<input type="password" class="form-control subhead" placeholder="Password">
+													<input type="password" class="form-control subhead"
+														placeholder="Password">
 												</div>
 											</li>
 											<li class="dropdown-item subhead"><em>I forgot my Password</em></li>
@@ -218,48 +221,172 @@
 	<div class="slidingOuterCon">
 		<div class="slidingBackground">
 			<div class="topbooks">
-				<img src="images/freddie-marriage-w8JiSVyjy-8-unsplash.jpg" alt="book1">
-				<h3>Alona Po</h3>
+				<a href="#">
+					<img id="topbooks_img" src="images/freddie-marriage-w8JiSVyjy-8-unsplash.jpg" alt="book1">
+				</a>
+				<h3 class="topbooks_name">Alona Po</h3>
 			</div>
 			<div>
-				<img src="images/chris-lawton-zvKx6ixUhWQ-unsplash.jpg" alt="book2">
-				<h3>Chris Lawton</h3>
+				<a href="#">
+					<img id="topbooks_img" src="/images/chris-lawton-zvKx6ixUhWQ-unsplash(1).jpg" alt="book2">
+				</a>
+				<h3 class="topbooks_name">Chris Lawton</h3>
 			</div>
 			<div>
-				<img src="images/daria-nepriakhina-xY55bL5mZAM-unsplash.jpg" alt="book3">
-				<h3>Daria Nepriakhina</h3>
+				<a href="#">
+					<img id="topbooks_img" src="images/daria-nepriakhina-xY55bL5mZAM-unsplash.jpg" alt="book3">
+				</a>
+				<h3 class="topbooks_name">Daria Nepriakhina</h3>
 			</div>
 			<div>
-				<img src="images/ergita-sela-rjm78PEyYLc-unsplash.jpg" alt="book4">
-				<h3>Ertiga Sela</h3>
+				<a href="#">
+					<img id="topbooks_img" src="images/ergita-sela-rjm78PEyYLc-unsplash.jpg" alt="book4">
+				</a>
+				<h3 class="topbooks_name">Ertiga Sela</h3>
 			</div>
 			<div>
-				<img src="images/freddie-marriage-w8JiSVyjy-8-unsplash.jpg" alt="book5">
-				<h3>Freddie Lawton</h3>
+				<a href="#">
+					<img id="topbooks_img" src="images/freddie-marriage-w8JiSVyjy-8-unsplash.jpg" alt="book5">
+				</a>
+				<h3 class="topbooks_name">Freddie Lawton</h3>
 			</div>
 			<div>
-				<img src="images/joanna-kosinska-kKfVAvdBsAw-unsplash.jpg" alt="book5">
-				<h3>Joanna Kosinska</h3>
+				<a href="#">
+					<img id="topbooks_img" src="images/joanna-kosinska-kKfVAvdBsAw-unsplash.jpg" alt="book5">
+				</a>
+				<h3 class="topbooks_name">Joanna Kosinska</h3>
 			</div>
 			<div>
-				<img src="images/nathan-dumlao-aa0eHA73iLo-unsplash.jpg" alt="book5">
-				<h3>Nathan Dumlao</h3>
+				<a href="#">
+					<img id="topbooks_img" src="images/nathan-dumlao-aa0eHA73iLo-unsplash.jpg" alt="book5">
+				</a>
+				<h3 class="topbooks_name">Nathan Dumlao</h3>
 			</div>
 			<div>
-				<img src="images/thought-catalog-o0Qqw21-0NI-unsplash.jpg" alt="book5">
-				<h3>Thought Catalog</h3>
+				<a href="#">
+					<img id="topbooks_img" src="images/thought-catalog-o0Qqw21-0NI-unsplash.jpg" alt="book5">
+				</a>
+				<h3 class="topbooks_name">Thought Catalog</h3>
 			</div>
 			<div>
-				<img src="images/tom-hermans-9BoqXzEeQqM-unsplash.jpg" alt="book5">
-				<h3>Tom Hermans</h3>
+				<a href="#">
+					<img id="topbooks_img" src="images/tom-hermans-9BoqXzEeQqM-unsplash.jpg" alt="book5">
+				</a>
+				<h3 class="topbooks_name">Tom Hermans</h3>
 			</div>
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col" style="background-color: aqua;"></div>
-			<div class="col" style="background-color: brown;"></div>
+	<div class="container-fluid">
+		<div class="row row-cols-md-auto row-cols-sm-auto">
+			<div class="col-4 books_description carousel slide" data-bs-ride="carousel" id="carouselExampleSlidesOnly">
+				<div class="carousel-inner books_des_sliding">
+					<div class="carousel-item active description_text">
+						<h1><strong>Alona Po</strong></h1>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+							It
+							is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+					</div>
+					<div class="carousel-item description_text">
+						<h1><strong>Chris Lawton</strong></h1>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+							unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
+							decided to leave for the far World of Grammar</p>
+					</div>
+					<div class="carousel-item description_text">
+						<h1><strong>Daria Nepriakhina</strong></h1>
+						<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
+							Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+					</div>
+					<div class="carousel-item description_text">
+						<h1><strong>Ergita Sela</strong></h1>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+							there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+							Semantics, a large language ocean.</p>
+					</div>
+					<div class="carousel-item description_text">
+						<h1><strong>Freddie Konsinska</strong></h1>
+						<p>She packed her seven versalia, put her initial into the belt and made herself on the way.
+							When she reached the first hills of the Italic Mountains, she had a last view back on the
+							skyline of her hometown.</p>
+					</div>
+					<div class="carousel-item description_text">
+						<h1><strong>Joanna Lawton</strong></h1>
+						<p>The copy warned the Little Blind Text, that where it came from it would have been rewritten a
+							thousand times and everything that was left from its origin would be the word "and" and the
+							Little Blind Text should turn around and return to its own, safe country.</p>
+					</div>
+					<div class="carousel-item description_text">
+						<h1><strong>Nathan Dumlao</strong></h1>
+						<p> A small river named Duden flows by their place and supplies it with the necessary
+							regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your
+							mouth.</p>
+					</div>
+					<div class="carousel-item description_text">
+						<h1><strong>Thought Catalog</strong></h1>
+						<p> But nothing the copy said could convince her and so it didn’t take long until a few
+							insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her
+							into their agency, where they abused her for their projects again and again.</p>
+					</div>
+					<div class="carousel-item description_text">
+						<h1><strong>Tom Hermans</strong></h1>
+						<p>And if she hasn’t been rewritten, then they are still using her. Far far away, behind the
+							word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-8 description_photosList carousel slide" data-bs-ride="carousel"
+				id="carouselExampleSlidesOnly">
+				<div class="carousel-inner descreption_photos">
+					<div class="carousel-item active">
+						<a href="#">
+							<img class="description_img" src="/images/alona-po-Z72dIVjYsS4-unsplash.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="description_img" src="/images/chris-lawton-zvKx6ixUhWQ-unsplash(1).jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="description_img" src="/images/daria-nepriakhina-xY55bL5mZAM-unsplash.jpg"
+								alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="description_img" src="/images/ergita-sela-rjm78PEyYLc-unsplash.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="description_img" src="/images/freddie-marriage-w8JiSVyjy-8-unsplash.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="description_img" src="/images/joanna-kosinska-kKfVAvdBsAw-unsplash.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="description_img" src="/images/nathan-dumlao-aa0eHA73iLo-unsplash.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="description_img" src="/images/thought-catalog-o0Qqw21-0NI-unsplash.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="description_img" src="/images/tom-hermans-9BoqXzEeQqM-unsplash.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
