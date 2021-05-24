@@ -1,33 +1,34 @@
-body{
-  background-color: #e4efe7;
+body {
+  background-color: #caecd3;
 }
-.navbar{
+
+.navbar {
   padding: 50px;
   background-color: #a7d7c5;
 }
 
-.dropdown-item{
-    padding:  10px 15px;
-    margin: 0 10px;
-  }
-  
-  .dropdown_heading{
-    padding: 40px 0 20px 0;
-    margin: 0 0 20px 90px;
-  }
-  
-  .navbar-brand{
-    font-size: 40px;
-  }
-  
-  .nav-item{
-    padding: 0 10px;
-    font-size: 20px;
-  }
+.navbar-brand {
+  font-size: 40px;
+}
 
-.dropdownbutton:hover .dropdown-menu{
+.dropdown-item {
+  padding: 10px 15px;
+  margin: 0 10px;
+}
+
+.nav-item {
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.dropdown_heading {
+  padding: 40px 0 20px 0;
+  margin: 0 0 20px 90px;
+}
+
+.dropdownbutton:hover .dropdown-menu {
   display: block;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   width: fit-content;
   height: fit-content;
   animation: scaleDown 500ms ease-in-out forwards;
@@ -36,108 +37,129 @@ body{
   color: #121212;
 }
 
-@keyframes scaleDown{
-  0%{
+@keyframes scaleDown {
+  0% {
     transform: scaleY(0);
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: scaleY(1);
   }
 }
 
-.dropdownbutton:hover .dropdown-item{
+.dropdownbutton:hover .dropdown-item {
   width: fit-content;
   height: fit-content;
   animation: translatex 2s ease-in-out forwards;
   transform-origin: top center;
 }
 
-.dropdown-item:hover{
-  background-color: #afc4bc;
-  cursor: pointer;
-}
-
-.subhead:hover{
-  background-color: transparent;
-}
-
-@keyframes translatex{
-  0%{
+@keyframes translatex {
+  0% {
     opacity: 0;
     transform: translateY(20px);
   }
 
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
 
-.row{
-    width: max-content;
+.dropdown-item:hover {
+  background-color: #afc4bc;
+  cursor: pointer;
 }
 
-.col{
-    width: max-content;
-    margin: 0 100px 20px 100px;
-    padding: 20px 10px;
+.subhead:hover {
+  background-color: transparent;
 }
 
-#second_col, #first_col{
-    margin-left: 20px;
-    border-style: none none none solid;
-    border-color: rgb(70, 70, 70);
-    border-width: 0.1em;
+.booksdropdown {
+  width: max-content;
 }
 
-#first_col{
-    margin-left: 90px;
+.col {
+  width: max-content;
+  margin: 0 100px 20px 100px;
+  padding: 20px 10px;
+}
+
+#second_col,
+#first_col {
+  margin-left: 20px;
+  border-style: none none none solid;
+  border-color: rgb(70, 70, 70);
+  border-width: 0.1em;
+}
+
+#first_col {
+  margin-left: 90px;
 }
 
 
-.slidingOuterCon{
+.about_li,
+.support_li {
+  right: 50px;
+  text-align: center;
+}
+
+#about_items{
+  margin-right: 120px;
+}
+
+#support_items {
+  margin-left: 125px;
+}
+
+.slidingOuterCon {
   overflow: hidden;
-  margin: 100px auto;
+  margin: 100px 0 auto;
   display: flex;
   background-color: #74b49b;
 }
-.slidingBackground{
+
+.slidingBackground {
   display: flex;
   position: relative;
   width: 5000px;
   height: 450px;
   animation: slide 90s linear infinite;
   justify-content: space-around;
-  justify-content: baseline;
   justify-items: baseline;
 }
 
-.slidingBackground:hover{
-  animation-play-state: paused ;
-}
-
-@keyframes slide{
-  0%{
+@keyframes slide {
+  0% {
     transform: translateX(0%);
   }
-  100%{
+
+  90% {
+    transform: translate(-90%);
+  }
+  100% {
     transform: translateX(-100%);
   }
+} 
+
+.slidingBackground:hover {
+  animation-play-state: paused;
+
 }
 
-.topsells{
+.topsells {
   position: relative;
   top: 70px;
   display: flex;
   justify-content: center;
-} 
+}
 
-.topbooks{
+.topbooks {
   justify-content: space-around;
 }
 
-img{
+#topbooks_img {
   margin: 30px;
   padding: 30px;
   background-size: cover;
@@ -146,7 +168,7 @@ img{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
 }
 
-h3{
+.topbooks_name {
   margin-left: 30px;
   width: 450px;
   padding: 0 0 10px 0;
@@ -154,11 +176,34 @@ h3{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
 }
 
-.about_li, .support_li{
-  right: 50px;
-  text-align: center;
+.books_description, .description_photosList{
+  margin: 70px 0 0 0 ;
+  padding: 0;
+  width: 40%;
+  height: 800px;
 }
 
-#support_items{
-  margin-left: 125px;
+.description_photosList{
+  width: 60%;
+}
+
+.description_text h1{
+  padding: 0 0 10px 60px;
+  font-size: 70px;
+  border-style: none none dashed none;
+  border-color: rgb(70, 70, 70);
+  border-width: 0.03em;
+}
+
+.description_text p{
+  padding: 70px 40px 0 60px;
+  font-size: 30px;
+  letter-spacing: 2.5px;
+} 
+
+.description_img{
+  background-size:cover;
+  padding-left: 20px;
+  height: 800px;
+  width: 100%;
 }
