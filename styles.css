@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #caecd3;
+  background-color: #dee6e0;
 }
 
 .navbar {
@@ -105,7 +109,7 @@ body {
   text-align: center;
 }
 
-#about_items{
+#about_items {
   margin-right: 120px;
 }
 
@@ -114,6 +118,8 @@ body {
 }
 
 .slidingOuterCon {
+  width: 100%;
+  height: 480px;
   overflow: hidden;
   margin: 100px 0 auto;
   display: flex;
@@ -123,9 +129,10 @@ body {
 .slidingBackground {
   display: flex;
   position: relative;
-  width: 5000px;
+  padding-left: 100px;
+  width: 300%;
   height: 450px;
-  animation: slide 90s linear infinite;
+  animation: slide 100s linear infinite;
   justify-content: space-around;
   justify-items: baseline;
 }
@@ -135,13 +142,14 @@ body {
     transform: translateX(0%);
   }
 
-  90% {
-    transform: translate(-90%);
+  50% {
+    transform: translateX(-70%);
   }
+
   100% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
-} 
+}
 
 .slidingBackground:hover {
   animation-play-state: paused;
@@ -155,39 +163,44 @@ body {
   justify-content: center;
 }
 
-.topbooks {
+.topbooks,
+.popbooks {
   justify-content: space-around;
 }
 
-#topbooks_img {
+#topbooks_img,
+#popbooks_img {
   margin: 30px;
   padding: 30px;
   background-size: cover;
   width: 450px;
-  height: max-content;
+  height: 333px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
 }
 
-.topbooks_name {
+.topbooks_name,
+.popbooks_name {
   margin-left: 30px;
   width: 450px;
-  padding: 0 0 10px 0;
+  height: 170px;
+  padding: 10px;
   text-align: center;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
 }
 
-.books_description, .description_photosList{
-  margin: 70px 0 0 0 ;
+.books_description,
+.description_photosList {
+  margin: 70px 0 0 0;
   padding: 0;
   width: 40%;
   height: 800px;
 }
 
-.description_photosList{
+.description_photosList {
   width: 60%;
 }
 
-.description_text h1{
+.description_text h1 {
   padding: 0 0 10px 60px;
   font-size: 70px;
   border-style: none none dashed none;
@@ -195,15 +208,90 @@ body {
   border-width: 0.03em;
 }
 
-.description_text p{
+.description_text p {
   padding: 70px 40px 0 60px;
   font-size: 30px;
   letter-spacing: 2.5px;
-} 
+}
 
-.description_img{
-  background-size:cover;
+.description_img {
+  background-size: cover;
   padding-left: 20px;
-  height: 800px;
+  width: 911px;
+}
+
+.description_photosList{
+  overflow: hidden;
+}
+
+.buybuttons {
+  padding: 50px 0 0 60px;
+}
+
+.buybutton {
+  padding: 10px 40px;
+  margin-right: 30px;
+}
+
+.popular_container {
+  padding: 30px 0 50px 0;
+}
+
+.popular_container h1 {
+  padding: 80px 0 30px 0;
+  text-align: center;
+  font-size: 60px;
+}
+
+#popular_outer {
+  margin-top: 0;
+  padding-bottom: 100px;
+  height: 600px;
+}
+
+#popbooks {
+  background-color: #121212;
+}
+
+.whatsNew_row {
+  margin: 0;
+  padding: 0;
   width: 100%;
+  height: 3000px;
+  background-color: brown;
+}
+
+.whatsNew_col1 {
+  padding: 0;
+  margin: 0;
+  background-color: blueviolet;
+}
+
+.whatsNew_col2 {
+  padding: 0;
+  margin: 0;
+  background-color: blue;
+}
+
+.whatsNew_col2_img {
+  width: 633px;
+  height: 800px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-image: url(/images/henry-be-lc7xcWebECc-unsplash.jpg);
+  background-size: cover;
+}
+
+.whatsNew_col2_text {
+  position: sticky;
+  top: 500px;
+  padding: 10px 0 10px 100px;
+  background-color: rgba(255, 254, 254, 0.384);
+  backdrop-filter: blur(3px);
+}
+
+.extra {
+  height: 1000px;
+  background-color: chartreuse;
 }
