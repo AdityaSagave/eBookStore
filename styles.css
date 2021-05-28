@@ -276,7 +276,7 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
-  background-image: url(https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym9va3N8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-image: url("https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym9va3N8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
 }
 
